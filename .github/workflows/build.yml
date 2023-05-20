@@ -208,7 +208,7 @@ jobs:
     steps:
       - name: Generate RELEASE_NAME and ONNXRUNTIME_BASENAME
         run: |
-          echo "RELEASE_NAME=onnxruntime-xcframework-${{ env.ONNXRUNTIME_VERSION }}" >> $GITHUB_ENV
+          echo "RELEASE_NAME=onnxruntime-ios-xcframework-${{ env.ONNXRUNTIME_VERSION }}" >> $GITHUB_ENV
           echo "ONNXRUNTIME_BASENAME=libonnxruntime.${{ env.ONNXRUNTIME_VERSION }}.dylib" >> "$GITHUB_ENV"
 
       - uses: actions/download-artifact@v2
